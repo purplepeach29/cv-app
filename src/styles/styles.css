@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+  margin: 0;
+  background: linear-gradient(rgb(90, 90, 90), rgb(139, 139, 139));
+  color: rgb(237, 228, 228);
+  width: 100%;
+  height: 100%;
+}
+input,
+textarea {
+  display: block;
+  width: 90%;
+  border: none;
+  background-color: rgb(103, 103, 103);
+  border-radius: 0.5rem;
+  color: bisque;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+h2 {
+  margin: 1rem;
+}
+h3 {
+  margin: 1rem;
+}
+
+form {
+  margin: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  display: block;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(151, 151, 151);
+}
+
+.print {
+  position: fixed;
+  top: 0;
+  right: 1rem;
+  margin: 1rem;
+  background-color: rgb(155, 184, 207);
+}
+
+.delete {
+  padding: 0.25rem;
+  position: absolute;
+  border-radius: 50%;
+  width: 1.5rem;
+  aspect-ratio: 1/1;
+  right: 2.5rem;
+  top: 1.5rem;
+  background-color: rgb(168, 60, 60);
+  color: azure;
+}
+
+.delete:hover {
+  color: red;
+}
+
+.sidebar {
+  padding-bottom: 2rem;
+  margin-top: 0;
+  background: rgb(39, 39, 39);
+  border-top-right-radius: 1rem;
+  font-family: "Source Code Pro", monospace;
+  position: fixed;
+  width: 25vw;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+}
+
+.sidebar_collapsed {
+  display: none;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.listItem {
+  margin: 1rem;
+  padding: 0.5rem;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.169);
+}
+
+label {
+  font-size: 1rem;
+}
+
+.main {
+  margin-left: 25vw;
+}
+
+.output {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: whitesmoke;
+  color: black;
+  width: 612pt;
+  height: 792pt;
+  overflow: scroll;
+}
+
+.header {
+  display: flex;
+  padding: 0;
+  background-color: rgb(217, 217, 217);
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.name_title {
+  margin-left: 1rem;
+}
+
+.name {
+  margin: 0.5rem;
+  letter-spacing: 2px;
+  color: gray;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title {
+  margin: 0.5rem;
+  margin-left: 30px;
+  letter-spacing: 3px;
+  color: gray;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.photo {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top center;
+  width: 12%;
+  padding: 10px;
+}
+
+.main-content {
+  display: flex;
+  padding: 1rem;
+  padding-bottom: 0;
+  color: rgb(69, 69, 69);
+}
+
+.left-content {
+  flex: 35%;
+}
+
+.right-content {
+  flex: 65%;
+}
+
+.content-heading {
+  text-align: center;
+  margin: 0.25rem;
+  letter-spacing: 0.2rem;
+  color: gray;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-bottom: solid;
+  border-color: gray;
+}
+
+.content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.degree {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Mulish", sans-serif;
+  color: gray;
+}
+
+.schoolname {
+  font-style: italic;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.edu_start-end {
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  padding-bottom: 0.25rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.contact-icon {
+  flex: 0%;
+}
+
+.contact-value {
+  flex: 60%;
+}
+
+.positiontitle {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.company-date {
+  color: gray;
+  padding-bottom: 0.3rem;
+}
+@media print {
+  .output {
+    box-shadow: none;
+    margin: 0;
+    background-color: whitesmoke;
+    color: black;
+    max-width: 100vw;
+    min-height: 100vh;
+    aspect-ratio: unset;
+  }
+}
